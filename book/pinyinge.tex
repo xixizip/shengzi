@@ -1,0 +1,18 @@
+\hanziboxset{frametype=田,framecolor=black!30!,pinyinline=true,charf=\huge,hanzi=false}
+\centering
+\ExplSyntaxOn
+\hcoffin_set:Nn \l_tmpa_coffin
+ {
+ \int_step_inline:nn {10}
+ {
+ \hanzibox*{国}
+ \hspace*{-0.40pt}
+ }
+ }
+ \int_step_inline:nn {8}
+ {
+ \coffin_typeset:Nnnnn
+ \l_tmpa_coffin { l } { b } { 0pt } { 5pt }
+ \par\nointerlineskip
+ }
+\ExplSyntaxOff

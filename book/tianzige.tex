@@ -1,0 +1,21 @@
+\hanziboxset{frametype=田,framecolor=black,tran=false,charcolor=black,charf=\Huge}
+\centering
+\ExplSyntaxOn
+\hcoffin_set:Nn \l_tmpa_coffin
+  {
+    \int_step_inline:nn {7}
+      {
+        \hanzibox{}
+       \hspace*{-0.40pt}
+      }
+}
+\hcoffin_set:Nn \l_tmpb_coffin
+{}
+\int_step_inline:nn {11}
+  {
+    \coffin_join:NnnNnnnn \l_tmpb_coffin { hc } { b }
+      \l_tmpa_coffin { hc } { t } { 0pt } { 0.4pt }
+  }
+\coffin_typeset:Nnnnn
+  \l_tmpb_coffin { l } { b } { 0pt } { 0pt }
+\ExplSyntaxOff

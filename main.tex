@@ -1,0 +1,32 @@
+\documentclass{ctexart}
+
+\usepackage{hanzibox}
+
+\usepackage[%
+  paperwidth=105mm,
+  paperheight=148mm,
+  %paperwidth=148mm,
+  %paperheight=210mm,
+  top=1.5cm,
+  bottom=0cm,
+  left=1cm,
+  right=1cm,
+  headsep=1cm,
+  footskip=0pt]{geometry}
+
+% 禁止行距
+\setlength{\parskip}{0pt}%
+% 禁止缩进
+\setlength{\parindent}{0pt}%
+
+\begin{document}
+
+\raggedright
+
+\hanziboxset{frametype=田,framecolor=black!30!,charcolor=red,charf=\Huge,pinyinline=true,pinyinf=\normalsize,hanzi=false}
+
+%\newpage
+
+\include{./book/pinyinge.tex}
+
+\end{document}
